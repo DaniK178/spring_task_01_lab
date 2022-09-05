@@ -1,5 +1,6 @@
 package com.example.task_01.controllers;
 
+import com.example.task_01.models.Celebration;
 import com.example.task_01.models.Reply;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,18 @@ import org.springframework.web.bind.annotation.RestController;
             return newgreeting;
         }
 
+//        public Reply greetingTod(@RequestParam(value = "timeOfDay") String timeOfDay){}
+//        Reply newgreeting = new Reply("Good afternoon", "Colin");
+//        return newgreeting.timeOfDay;
+
+
+    @GetMapping(value ="/christmas")
+        public Celebration celebrations(){
+        Celebration christmas = new Celebration("Merry Christmas");
+        return christmas;
+
     }
+}
 
 
 //    public String greeting(@RequestParam(value = "name") String name){
