@@ -15,13 +15,15 @@ import org.springframework.web.bind.annotation.RestController;
 
         @GetMapping
         public Reply greeting(){
-            Reply newgreeting = new Reply("Good afternoon", "Colin");
+            Reply newgreeting = new Reply("Good afternoon", "Colin!");
             return newgreeting;
         }
 
-//        public Reply greetingTod(@RequestParam(value = "timeOfDay") String timeOfDay){}
-//        Reply newgreeting = new Reply("Good afternoon", "Colin");
-//        return newgreeting.timeOfDay;
+//    @GetMapping
+//    public Reply greeting(@RequestParam(value = "timeOfDay) String timeOfDay){
+//        Reply newgreeting = new Reply("Good afternoon", "Colin!");
+//
+//    }
 
 
     @GetMapping(value ="/christmas")
@@ -32,12 +34,5 @@ import org.springframework.web.bind.annotation.RestController;
     }
 }
 
-
-//    public String greeting(@RequestParam(value = "name") String name){
-//        // the value can actually be anything - if we put "batman" it will still work, but it is good convention to do
-//        //return "Hello World!";
-//        return "Hello " + name;
-//        // we get the name through the URL
-//        // we get this through the annotation RequestParam
 
 
