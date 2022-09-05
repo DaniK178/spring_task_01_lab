@@ -6,7 +6,7 @@ public class Reply {
 
     private String timeOfDay;
 
-    public Reply(String name, String timeOfDay) {
+    public Reply(String timeOfDay, String name) {
         this.name = name;
         this.timeOfDay = timeOfDay;
     }
